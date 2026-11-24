@@ -1,0 +1,8 @@
+export const projects = [
+  { key: "2bhk", referenceBudget: "₹3.57L", title: "2 BHK interiors", description: "Make more of a compact floor plan.", image: "/images/3e8f5b24220efaf3a31182b548d4368d.jpg", alt: "Open-plan apartment with light furniture and recessed ceiling lighting" },
+  { key: "3bhk", referenceBudget: "₹4.23L", title: "3 BHK interiors", description: "Give shared spaces and private rooms their own character.", image: "/images/9c33778a4a7e429b646b492f9b9715ca.jpg", alt: "Apartment with sage-green kitchen cabinets and an adjoining dining area" },
+  { key: "4bhk", referenceBudget: "₹4.81L", title: "4 BHK interiors", description: "Plan a cohesive look across a larger home.", image: "/images/492a984027ad7bedbe720d429d15e793.jpg", alt: "Double-height living room with a staircase and an overlooking gallery" },
+  { key: "kitchen", referenceBudget: "₹1.37L", title: "Modular kitchen", description: "Plan storage and worktops around how you cook.", image: "/images/ee846ae16b1f01ad088d7aba8e52dec9.jpg", alt: "Modular kitchen with a timber island and warm pendant lighting" },
+  { key: "bedroom", referenceBudget: "₹1.49L", title: "Bedroom", description: "Pair practical storage with a restful palette.", image: "/images/1a74d88a0eaab94c7b949ceaa293c5ec.jpg", alt: "Bedroom with neutral bedding, a timber headboard, and a woven pendant" },
+  { key: "living-room", referenceBudget: "₹1.20L", title: "Living room", description: "Create a comfortable place to come together.", image: "/images/8a9b4ae736172a55873569fab2f87edb.jpg", alt: "Living room with a curved olive-green sofa and a pale round table" },
+] as const;

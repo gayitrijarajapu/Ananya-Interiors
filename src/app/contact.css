@@ -1,0 +1,76 @@
+.contact-section {
+  padding-block: clamp(3rem, 7vw, 6.5rem);
+  background: #eee7dd;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.contact-intro h1, .contact-intro h2 {
+  margin-block: .65rem 1rem;
+  font-size: clamp(2.75rem, 5.5vw, 5.25rem);
+}
+
+.contact-intro > p:not(.eyebrow) { max-width: 31ch; color: var(--muted); }
+.contact-intro address { display: grid; justify-items: start; gap: .45rem; margin-top: 1.3rem; font-style: normal; }
+.contact-intro a, .footer-email { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: .2em; }
+.footer-email { display: block; margin-top: .65rem; font-size: .92rem; }
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-form label { display: grid; gap: .4rem; font-size: .9rem; font-weight: 650; }
+.contact-form :is(input, select, textarea) {
+  width: 100%;
+  padding: .72rem .8rem;
+  border: 1px solid #b8afa2;
+  border-radius: 0;
+  background: #faf7f2;
+  color: var(--ink);
+  font: 400 1rem/1.45 var(--sans);
+}
+.contact-form textarea { resize: vertical; }
+.contact-form-wide { grid-column: 1 / -1; }
+.contact-form-hint { margin-top: .55rem; color: var(--muted); font-size: .85rem; }
+
+@media (max-width: 750px) {
+  .contact-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 460px) {
+  .contact-form { grid-template-columns: 1fr; }
+}
+
+.quote-form {
+  border: 1px solid var(--line);
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  background: var(--paper);
+}
+.quote-form-heading h2 { margin-top: .45rem; font-size: clamp(1.6rem, 2.8vw, 2.4rem); }
+.quote-form fieldset {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.quote-form fieldset:not([hidden]) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.quote-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.quote-back { padding: .8rem; border: 0; background: transparent; text-decoration: underline; text-underline-offset: .2em; }
+.footer-whatsapp { display: inline-grid; place-items: center; width: 42px; height: 42px; border: 1px solid var(--line); border-radius: 50%; }
+.footer-socials .footer-whatsapp:hover { background: var(--olive); color: white; }
+.footer-whatsapp svg { width: 20px; height: 20px; }
+
+@media (max-width: 520px) {
+  .quote-form fieldset:not([hidden]) { grid-template-columns: 1fr; }
+}
