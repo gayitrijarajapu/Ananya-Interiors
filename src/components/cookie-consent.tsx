@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { MessageSquare, X } from "lucide-react";
 import {
@@ -46,12 +46,12 @@ const acceptAll: Preferences = {
 };
 
 export function CookieConsent() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
   const [preferences, setPreferences] = useState<Preferences>(defaults);
   const current = useRef<Preferences | null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     function sync() {
       current.current = readPreferences();
       setVisible(!current.current);

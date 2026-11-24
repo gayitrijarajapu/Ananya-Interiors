@@ -18,7 +18,7 @@ export default function AboutPage() {
           <Link className="button" href="/contact">Plan your project</Link>
         </div>
         <div className="studio-image">
-          <Image src="/images/studio.webp" alt="A light-filled living room with a linen sofa and natural stone table" fill sizes="(max-width: 680px) 100vw, 55vw" />
+          <Image src="/images/studio.webp" alt="A light-filled living room with a linen sofa and natural stone table" fill sizes="(max-width: 800px) 100vw, 61vw" />
         </div>
       </section>
       <ServiceAreas />

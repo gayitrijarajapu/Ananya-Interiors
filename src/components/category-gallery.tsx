@@ -28,7 +28,7 @@ export function CategoryGallery() {
         {categories.map(({ href, image, label }) => (
           <li key={href}>
             <Link className="category-tile" href={href}>
-              <Image src={image} alt="" fill sizes="(max-width: 540px) 66vw, (max-width: 900px) 37vw, 22vw" />
+              <Image src={image} alt="" fill sizes="(max-width: 540px) 65vw, (max-width: 900px) 37vw, (max-width: 1466px) 21vw, 300px" />
               <span>{label}</span>
             </Link>
           </li>

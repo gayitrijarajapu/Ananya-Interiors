@@ -33,7 +33,7 @@ export default async function PiecePage({ params }: PageProps) {
       <Link className="text-link" href="/collection">Back to the collection</Link>
       <div className="detail-grid">
         <div className="detail-image">
-          <Image src={piece.image} alt={piece.alt} fill preload sizes="(max-width: 800px) 92vw, 50vw" />
+          <Image src={piece.image} alt={piece.alt} fill preload sizes="(max-width: 800px) 90vw, (max-width: 1466px) 45vw, 660px" />
         </div>
         <div className="detail-copy">
           <p className="eyebrow">{piece.category}</p>

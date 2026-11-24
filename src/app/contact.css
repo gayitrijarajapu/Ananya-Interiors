@@ -25,9 +25,10 @@
   gap: 1rem;
 }
 
-.contact-form label { display: grid; gap: .4rem; font-size: .9rem; font-weight: 650; }
+.contact-form label { display: grid; min-width: 0; gap: .4rem; font-size: .9rem; font-weight: 650; }
 .contact-form :is(input, select, textarea) {
   width: 100%;
+  min-width: 0;
   padding: .72rem .8rem;
   border: 1px solid #b8afa2;
   border-radius: 0;
@@ -40,7 +41,7 @@
 .contact-form-hint { margin-top: .55rem; color: var(--muted); font-size: .85rem; }
 
 @media (max-width: 750px) {
-  .contact-layout { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (max-width: 460px) {

@@ -32,7 +32,7 @@ export function Collection() {
           <article className="product-card" key={piece.slug}>
             <div className="product-image">
               <Link href={`/pieces/${piece.slug}`} aria-label={`View ${piece.name}`}>
-                <Image src={piece.image} alt={piece.alt} fill sizes="(max-width: 560px) 92vw, (max-width: 800px) 45vw, 30vw" />
+                <Image src={piece.image} alt={piece.alt} fill sizes="(max-width: 390px) 90vw, (max-width: 680px) 44vw, (max-width: 1466px) 30vw, 430px" />
               </Link>
               <SavePiece slug={piece.slug} name={piece.name} />
             </div>

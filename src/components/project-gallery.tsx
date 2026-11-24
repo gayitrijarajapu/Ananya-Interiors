@@ -18,7 +18,7 @@ export function ProjectGallery() {
         {projects.map((project) => (
           <li key={project.key}>
             <Link className="category-tile" href={`/contact?project=${project.key}#quote-form`}>
-              <Image src={project.image} alt={project.alt} fill sizes="(max-width: 540px) 90vw, (max-width: 760px) 45vw, 30vw" />
+              <Image src={project.image} alt={project.alt} fill sizes="(max-width: 540px) 90vw, (max-width: 760px) 45vw, (max-width: 1466px) 30vw, 430px" />
               <span className="project-price">Budget guide · {project.referenceBudget}*</span>
               <span>{project.title}</span>
             </Link>

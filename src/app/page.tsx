@@ -35,7 +35,7 @@ export default function Home() {
           <a className="editorial-link" href="#materials">Our materials <ArrowRight size={15} aria-hidden /></a>
         </div>
         <div className="studio-image">
-          <Image src="/images/studio.webp" alt="Linen sofa and natural stone table beside a sunlit window" fill sizes="(max-width: 680px) 100vw, 61vw" />
+          <Image src="/images/studio.webp" alt="Linen sofa and natural stone table beside a sunlit window" fill sizes="(max-width: 800px) 100vw, 61vw" />
         </div>
       </section>
       <Materials />
